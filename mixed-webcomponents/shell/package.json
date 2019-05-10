@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "  cd ../app1-ng6 && npm run build:elements:all &&  cd ../app2-ng6 && npm run build:elements:all && cd ../app1-ng7 && npm run build:elements:all &&  cd ../app2-ng7 && npm run build:elements:all && cd ../shell && http-serve"
+    "start": "  cd ../app1-ng6 && npm run build:elements:all &&  cd ../app2-ng6 && npm run build:elements:all && cd ../app1-ng7 && npm run build:elements:all &&  cd ../app2-ng7 && npm run build:elements:all &&  cd ../shell && gzip -r -k app1-ng6/ && gzip -r -k app2-ng6/ && gzip -r -k app1-ng7/ && gzip -r -k app2-ng7/ && http-serve -g"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "http-serve": "^1.0.1"
+  }
 }
