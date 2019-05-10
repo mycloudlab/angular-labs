@@ -1,4 +1,4 @@
-Laboratório para montagem de microfrontends
+# Laboratório para montagem de microfrontends
 
 Quando lidamos com microfrontends é necessário estruturar diversos conceitos:
 
@@ -10,7 +10,7 @@ Quando lidamos com microfrontends é necessário estruturar diversos conceitos:
 A ideia é dar liberdade para os times escolherem a tecnologia. entretanto é necessário uma fundação em algo sólido, pensando em continuidade a fundação deve ser web components.
 
 
-Questões a serem respondidas:
+## Questões a serem respondidas:
 
 * **Questão**: É possível carregar diferentes versões do angular em um mesmo aplicativo?
   
@@ -22,7 +22,7 @@ Questões a serem respondidas:
 
 * **Questão**: Controle de dependências no frontend.
 
-  **Ideia:**: Tentar combinar o recurso externals do webpack com o que o plugin DllPlugin do webpack. Montar um loader que a partir de uma definição de dependências possa fazer o carregamento correto do webcomponent.
+  **Ideia:** Tentar combinar o recurso externals do webpack com o que o plugin DllPlugin do webpack. Montar um loader que a partir de uma definição de dependências possa fazer o carregamento correto do webcomponent.
 
   **Resultados alcançados:** Ainda em execução.
 
