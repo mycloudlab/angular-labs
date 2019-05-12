@@ -14,10 +14,12 @@ No teste é verificado se o compartilhamento do angular interfere no outro aplic
 
 O resultado foi que não interfere.
 
-Para executar o teste no app shell execute o comando abaixo:
+Para executar resolva as dependências e execute a aplicação com os comandos abaixo:
 
-
+```bash
+npm run resolve:deps
 npm start
+```
 
 
 o comando executará a construção das aplicações e iniciará o servidor http porta 8080.

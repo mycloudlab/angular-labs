@@ -1,0 +1,12 @@
+{
+  "name": "mixed-webcomponents",
+  "version": "1.0.0",
+  "description": "a finalidade desse repositório é aferir a possibilidade de execução de multiplos angulares na aplicação, com os componentes sendo distribuidos via webcomponentes.",
+  "main": "index.js",
+  "scripts": {
+    "resolve:deps": "cd app1-ng6; npm i & cd ../app2-ng6; npm i & cd ../app1-ng7; npm i & cd ../app2-ng7; npm i & cd ../shell; npm i ",
+    "start" : "cd shell; npm start"
+  },
+  "author": "",
+  "license": "ISC"
+}
