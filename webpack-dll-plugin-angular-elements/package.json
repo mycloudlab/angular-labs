@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "npm run build; cp -f src/index.html dist/webpack-dll-plugin-angular-elements; gzip -r -k dist/webpack-dll-plugin-angular-elements; http-serve dist/webpack-dll-plugin-angular-elements -g",
+    "start": "npm run build; cp -f src/index.html dist/webpack-dll-plugin-angular-elements;cp -f src/wc.js dist/webpack-dll-plugin-angular-elements; gzip -r -k dist/webpack-dll-plugin-angular-elements; http-serve dist/webpack-dll-plugin-angular-elements -g",
     "build": "ng build --prod --extraWebpackConfig webpack.extra.config.js --output-hashing none --single-bundle true; cp dist/library/*.js dist/webpack-dll-plugin-angular-elements/; ",
     "test": "ng test",
     "lint": "ng lint",
