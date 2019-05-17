@@ -24,9 +24,17 @@ A ideia é dar liberdade para os times escolherem a tecnologia. entretanto é ne
 
   **Ideia:** Tentar combinar o recurso externals do webpack com o que o plugin DllPlugin do webpack. Montar um loader que a partir de uma definição de dependências possa fazer o carregamento correto do webcomponent.
 
-  **Resultados alcançados:** Ainda em execução.
+  **Resultados alcançados:** Foi possivel usar o dll-plugin, isso otimizou o tempo de build e a aplicação funcionou como se fosse uma dll, o modulo é carregado e é possivel compartilhar entre aplicações, o experimento foi feito nos projetos [webpack-dll-plugin](webpack-dll-plugin) e [webpack-dll-plugin-angular-elements](webpack-dll-plugin-angular-elements). 
 
-  **Trade-offs:** a catalogar.
+  **Trade-offs:** o problema é fazer o carregamento unificado, não foi possível combinar em um unico source o bundle.
+
+  * **Questão:** é possível usar a tecnologia de webcomponents para o carregamento de microfrontends?
+  
+    **Ideia:** demonstrar o uso do carregamento de mini aplicações com diversas versões do angular e um appshell, nesse experimento tentar demonstrar como pode ser feito o empacotamento e building de aplicações juntamente com o controle das dependências compartilhadas.
+
+    **Resultados alcançados:** A definir
+
+    **trade-offs:** A definir
 
 
 

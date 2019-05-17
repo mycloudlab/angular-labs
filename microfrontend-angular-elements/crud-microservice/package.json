@@ -1,0 +1,27 @@
+{
+  "name": "crud-microservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently 'npm run start-discentes' 'npm run start-bolsas' 'npm run start-producoes' 'npm run start-pagamentos'",
+    "start-discentes": "babel-node index.js --sys gerenciador-discentes --entity discentes --port 3000 --db discentes.json",
+    "start-bolsas": "babel-node index.js --sys gerenciador-bolsas --entity bolsas --port 3001 --db bolsas.json",
+    "start-producoes": "babel-node index.js --sys gerenciador-producoes --entity producoes --port 3002 --db producoes.json",
+    "start-pagamentos": "babel-node index.js --sys gerenciador-pagamentos --entity pagamentos --port 3003 --db pagamentos.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "commander": "^2.20.0",
+    "express": "^4.16.4",
+    "lokijs": "^1.5.6",
+    "shortid": "^2.2.14"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "concurrently": "^4.1.0"
+  }
+}

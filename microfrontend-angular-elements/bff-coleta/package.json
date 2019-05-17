@@ -1,0 +1,24 @@
+{
+  "name": "bff-coleta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "HTTP_PROXY= HTTPS_PROXY= http_proxy= https_proxy= babel-node index.js "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.19.0",
+    "commander": "^2.20.0",
+    "express": "^4.16.4",
+    "lokijs": "^1.5.6",
+    "shortid": "^2.2.14"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "concurrently": "^4.1.0"
+  }
+}
