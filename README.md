@@ -39,3 +39,8 @@ A ideia é dar liberdade para os times escolherem a tecnologia. entretanto é ne
 
 
 
+
+## Links Úteis
+
+https://www.youtube.com/watch?v=BuRB3djraeM
+
